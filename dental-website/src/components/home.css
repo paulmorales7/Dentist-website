@@ -6,3 +6,59 @@
     overflow-x: hidden;
     position: relative;
 }
+
+.navBar{
+    display: flex;
+    padding: 40px;
+}
+
+.logo img {
+    width: 135px;
+}
+
+.navLinks{
+    flex: 1;
+}
+
+.navLinks ul{
+    margin-left: 50px;
+    display: inline;
+}
+
+.navLinks ul li{
+    list-style: none;
+    display: inline-block;
+    padding:  8px 25px;
+}
+
+.navLinks ul a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.navLinks ul li::after{
+    content: '';
+    width: 0;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: .5s;
+}
+
+.navLinks ul li:hover::after{
+    width: 100%;
+}
+
+.scheduleBtn{
+    padding: 10px 20px;
+    border: 0;
+    background: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.navLinks ul a .scheduleBtn{
+    color: black;
+}
